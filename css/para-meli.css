@@ -1,0 +1,272 @@
+*{
+    /*font-family: 'Playfair Display', serif;*/
+   font-family: 'Crimson Text', serif; 
+  /* font-family: 'Merienda', cursive;*/ 
+   /* font-family: 'Fredericka the Great', cursive; */
+}
+
+.links{
+   margin-left: 18px;
+   font-size: 20px;
+   color: aliceblue;
+}
+.links:hover{
+   border-radius: 15px;
+   background: black;
+}
+
+
+.carousel-caption {
+   padding-bottom: 210px;
+margin-bottom: 22%;
+   
+}
+.carousel-caption h2{
+    background: rgba(0,0,0,0.6);
+    color: white;
+   font-size: 270%;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.carousel-caption h3{
+    background: rgba(0,0,0,0.6);
+   font-size: 220%;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.carousel-caption a{
+   background: #edbb00;
+   padding: 15px 35px;
+   display: inline-block;
+   margin-top: 25px;
+   color: aliceblue;
+   text-transform: uppercase;
+   border-radius: 25px;
+}
+.carousel-caption a:hover{
+   text-decoration: none;
+}
+
+.am{
+   color: aliceblue;
+}
+
+.carousel-indicators .active{
+
+border-color: #edbb00;
+}
+
+
+
+
+/* PARALLAX */
+
+.wrapper{
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   letter-spacing: 2px;
+   overflow: hidden;
+   text-align: center;
+   clip: rect(0,auto ,auto, 0);
+}
+
+.wrapper h2{
+margin-top: 35px;
+   color: white;
+   font-size: 35px;
+   text-transform: uppercase;
+   font-weight: bold;
+
+}
+.wrapper h3{
+   color: #edbb00;
+font-size: 30px;
+font-weight: bold;
+
+}
+.wrapper p{
+   
+   color: aliceblue;
+   font-size: 27px;
+   letter-spacing: 1.5px;
+}
+.fondo{
+   width: 100%;
+   height: 100vh;
+   background: rgba(0,0,0,0.4); 
+}
+.texto{
+   position: fixed;
+   top:50%;
+   left: 50%;
+   overflow: hidden;
+   transform: translate(-50%,-50%);
+   
+
+}
+
+
+
+
+.wrapper:nth-child(1){
+   background: green;
+   top: -100vh;
+   z-index:1;
+}
+.wrapper:nth-child(2){
+   background: green;
+   top: 0vh;
+   z-index:2;
+}
+.wrapper:nth-child(3){
+   background: url(../img/mei.jpg);
+   -webkit-background-size:cover;
+   background-size: cover;
+   background-position: center center;
+   top: 100vh;
+   z-index:3;
+}
+.wrapper:nth-child(4){
+   background: url(../img/desa.1.jpg);
+   -webkit-background-size:cover;
+   background-size: cover;
+   background-position: center center;
+   top: 200vh;
+   z-index:4;
+}
+.wrapper:nth-child(5){
+   background: url(../img/desa2.png);
+   -webkit-background-size:cover;
+   background-size: cover;
+   background-position: center center;
+   top:300vh;
+   z-index:5;
+}
+.wrapper:nth-child(6){
+   background: url(../img/desa4.jpg);
+   -webkit-background-size:cover;
+   background-size: cover;
+   background-position: center center;
+   top: 400vh;
+   z-index:6;
+}
+
+.wrapper span{
+   color: #edbb00;
+}
+.wrapper a{
+   margin: 10px;
+}
+/* letras*/
+.intro{
+    width: 75%;
+    border-radius: 8px;
+    background: rgb(0, 0, 0,0.5);
+  padding: 8px;
+  margin-bottom: 10px;
+  
+}
+.letras{
+    letter-spacing: 1px;
+
+}
+.letras:hover{
+    text-decoration: none;
+    
+}
+.typing{
+    color: teal;
+   
+}
+.typing::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 3.5%;
+    border-right: 2px solid white;
+    animation: blink 0.6s infinite ease;
+
+}
+@keyframes blink{
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}
+
+
+@media only screen and (max-width:800px){
+   .navbar .navbar-brand{
+       font-size: 10px;
+      
+   }
+
+
+
+   .links{
+       font-size: 15px;
+       text-align: center;
+      
+   }
+  
+
+   .navbar-toggler:hover{
+       background: gray;
+   }
+   .bonton{
+       background: white;
+     
+
+   }
+   .carousel-caption{
+       padding-bottom: 100px;
+margin-bottom: 15%;
+   }
+
+   .carousel-caption h2{
+       font-size:25px;
+   }
+   .carousel-caption h3{
+       font-size: 20px;
+     
+   }
+   .carousel-caption a{
+       
+       padding:8px 22px;
+   
+       margin-top: 13px;
+
+   }
+   .wrapper h2{
+
+    
+       font-size: 15px;
+      
+   
+   }
+   .wrapper h3{
+
+    
+       font-size: 12px;
+      
+   
+   }
+   .wrapper p{
+
+    
+       font-size: 12px;
+      
+   
+   }
+  
+.intro{
+margin-bottom: 4px;
+padding: 4px;
+}
+}
+
