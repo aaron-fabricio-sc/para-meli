@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para meli</title><link rel="stylesheet" href="css/boton.css">
+</head>
+<body >
+    <div class="contenedor" id="body">
+        <div class="card">
+            <button class="face front" id="front">
+                <h2>presioname</h2>
+            </button>
+            <button class="face back" id="back">
+                <img src="img/€ÅR¡~¤ 20151120_105202.jpg" alt="">
+                <h2>meli <br>eres muy <br> linda</h2>
+                
+            </button>
+        </div>
+        <button class="boton" id="boton">GIRAR</button>
+       
+       
+    </div>
+    <script>
+        let front = document.getElementById('front')
+        let back = document.getElementById('back')
+        let btn = document.getElementById('boton')
+        let body = document.getElementById('body')
+
+        front.addEventListener('click', girar);
+        btn.addEventListener('click', desaparecer)
+
+        function girar(){
+           btn.classList.add('volver')
+           body.classList.add('fondo')
+           
+        }
+
+        function desaparecer(){
+            btn.classList.remove('volver')
+            body.classList.remove('fondo')
+        }
+    </script>
+</body>
+</html>

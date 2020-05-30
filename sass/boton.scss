@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif ;
+
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    flex-direction: column;
+}
+.fondo{
+    background-image: url('../img/big.jpg');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+   
+}
+.card .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 0 18px white;
+}
+.card .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 2s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+}
+
+.card .face.front{
+    background: rgb(133, 1, 51);
+    color: white;
+    text-shadow: 0 0 20px rgb(0, 255, 234);
+}
+.card:hover .face.front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.card .face.back{
+    text-shadow:  0 0 20px rgb(0, 255, 234);
+    background: #003a7c;
+    color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .face.back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.card .face h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    transform: perspective(500px) translateZ(50px);
+
+
+}
+
+.boton{
+    display: none;
+    margin: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.volver{
+    display: block;
+    color: green;
+}
+.desaparecer{
+    display: none;
+}
+   
+
+@media screen and (max-width:480px){
+    .card{
+        position: relative;
+        width: 200px;
+        height: 300px;
+        transform-style: preserve-3d;
+       
+    }
+    .card .face h2{
+        font-size: 1.7em;
+        text-transform: uppercase;
+        transform: perspective(500px) translateZ(50px);
+    
+    
+    }
+}
